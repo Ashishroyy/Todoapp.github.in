@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header ">
+            <nav class="navbar">
+                <a href="" class="navbar-brand">TODO List</a>
+
+                <input type="search" class="search-control" placeholder="Search" aria-label="Search" id="searchtext">
+
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Welcome to TODO List Application</h1>
+            <div class="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter your task" id="addtask">
+                    <input type="hidden" id="saveindex" value="">
+                    <div class="allbtn">
+
+                        <button type="button" class="btn btn-primary" id="addtaskbtn">
+                            Add task </button>
+                        <button type="button" class="btn btn-success" id="updatebtn" style="display: none;">
+                                Update </button>
+                        <button type="button" class="btn btn-danger" id="deletebtn">Delete All</button>
+                    </div>
+                </div>
+                <table>
+                    <div class="todo-output">
+                        <table class="table" id="addedtask">
+                    </div>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <script src="TODO.js"></script>
+</body>
+
+</html>
